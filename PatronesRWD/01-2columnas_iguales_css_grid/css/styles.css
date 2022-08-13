@@ -39,3 +39,15 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+
+/* dos columnas se aplica a contenedor padre: .contenedor */
+
+@media(min-width:768px) {
+.contenedor{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    
+    column-gap: 10rem;
+}
+
+}

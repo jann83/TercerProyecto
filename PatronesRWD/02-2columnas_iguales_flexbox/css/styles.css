@@ -39,3 +39,17 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+@media(min-width: 768px) {
+.contenedor{
+display: flex;
+gap: 10rem;
+/* version anterior ya que gap no es adminitido en varios navegadores */
+/* justify-content:space-between */
+
+}
+/* complemento para acomadar dos columnas sin gap */
+/* .entrada-blog{
+flex: 0 0 calc(50% -1rem);
+
+} */
+}

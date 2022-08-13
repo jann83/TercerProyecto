@@ -48,4 +48,31 @@ p {
 }
 
 
+
 /** CODIGO AQUI **/
+
+.contenedor {
+display: grid;
+/* otra forma para el acomodo e con grid area  */
+grid-template-areas:"izquierda contenido derecha" ;
+
+grid-template-columns: 1fr 3fr 1fr;
+/* con flow se resetea el acomodo que trae por defecto */
+grid-auto-flow: column;
+gap: 2rem;
+
+
+}
+
+/* para el acomo en grid de conetenido, se debe aplicar al contendor hijo */
+.contenido__principal {
+
+    grid-area: contenido;
+/* grid-column: 2 / 3; */
+}
+
+
+.Nosotros {
+grid-area: izquierda;
+    /* grid-column: 1/ 2 ; */
+}
