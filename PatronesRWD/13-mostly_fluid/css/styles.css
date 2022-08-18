@@ -37,3 +37,35 @@ p {
 }
 
 /** CODIGO AQUI **/
+
+.contenedor{
+    /* no se recomienda colocar width en pixeles
+    ya que el texto no es responsive */
+width: 95%;
+
+/* margin centra el contenido solo texto*/
+margin: 0 auto;
+}
+
+@media (min-width:768px) {
+    .contenedor{
+        width: 80%;
+    }
+}
+
+@media (min-width:992px) {
+    .contenedor{
+        width: 60%;
+    }
+}
+
+@media (min-width:250px) {
+    .contenedor{
+        width: 40%;
+    }
+
+
+img{
+
+    max-width: 100%;
+}
