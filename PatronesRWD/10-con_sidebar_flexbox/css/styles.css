@@ -49,3 +49,25 @@ p {
 
 
 /** CODIGO AQUI **/
+
+
+@media  (min-width: 768px){
+    .con-sidebar{
+
+        display: flex;
+        column-gap: 5rem;
+    }
+    aside{
+flex: 1;
+/* otro metodo es con calc
+flex: 0 0 calc(33.3% - 1rem);*/
+
+    }
+    article{
+
+        flex: 3;
+        /* otro método  es con calc, es lo mismo que flex:3;   
+        flex: 0 0 calc(66.6% - 1rem);*/
+    }
+/* factor de crecimiento, por cada pixel que recibe el aside recibe 1, mientras que el article recibe 3 */
+}

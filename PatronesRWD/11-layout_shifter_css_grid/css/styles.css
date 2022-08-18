@@ -49,3 +49,30 @@ p {
 
 
 /** CODIGO AQUI **/
+@media  (min-width: 768px){
+ .layout-shifter{
+display: grid;
+grid-template-areas: "contenido"
+                      "inferior"  ;
+
+
+ }
+ .sidebar{
+    grid-area: inferior;
+ }
+    
+}
+
+/* cuando grid-tamplate-areas se define, si se coloca  entre "contenido""inferior"  es para colocar 
+uno de bajo de otro, si se coloca " contenido inferior" es para colocarlo aun lado*/
+
+@media  (min-width: 992px){
+    .layout-shifter{
+        grid-template-areas: "contenido sidebar";
+        gap: 5rem;
+    }
+    .sidebar{
+        grid-area: sidebar;
+    
+    }
+}
